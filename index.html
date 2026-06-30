@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ryutec Travel Medellín 2026</title>
+<style>
+body{margin:0;background:#e8efe9;font-family:'Segoe UI',Arial,sans-serif;color:#1d2633}
+.page{width:8.5in;min-height:11in;margin:24px auto;background:#fffaf0;box-shadow:0 18px 55px #0003;overflow:hidden}
+.cover{min-height:11in;background:linear-gradient(180deg,#10243f55,#10243fee),url('https://images.unsplash.com/photo-1622308644420-b20142dc993c?auto=format&fit=crop&w=1600&q=85');background-size:cover;background-position:center;color:white;padding:42px;display:flex;flex-direction:column;justify-content:space-between}
+.logo{width:190px;background:white;padding:12px 18px;border-radius:18px}
+.tag{display:inline-block;margin-top:20px;padding:9px 15px;border:1px solid #ffffff66;background:#ffffff22;border-radius:999px;font-weight:800;text-transform:uppercase;font-size:12px}
+h1{font-size:82px;line-height:.86;margin:20px 0 10px;letter-spacing:-4px}
+.sub{font-size:25px;color:#ffe7af;font-weight:700;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.stat{background:#ffffff25;border:1px solid #ffffff40;border-radius:20px;padding:16px}
+.stat span{font-size:12px;font-weight:900;text-transform:uppercase;color:#ffe7af}.stat b{display:block;font-size:34px}
+.signature{border-left:5px solid #d9a441;padding-left:18px;font-size:19px;color:#fff5d6}
+.band{background:linear-gradient(90deg,#0f5f4a,#1fa67a,#1f7ed6);color:white;padding:16px 44px;font-size:18px;font-weight:900}
+.section{padding:34px 44px}.head{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.icon{width:54px;height:54px;border-radius:16px;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;background:linear-gradient(135deg,#0f5f4a,#1fa67a)}
+h2{margin:0;font-size:32px;color:#10243f}.lead{margin:4px 0 0;color:#667085;font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:white;border:1px solid #e8dcc6;border-radius:22px;padding:20px;box-shadow:0 8px 20px #10243f11}
+.card h3{margin:0 0 10px;font-size:22px;color:#0f5f4a}.card p{margin:6px 0;color:#5e6978;font-size:15px;line-height:1.45}
+.flight{display:flex;align-items:center;justify-content:space-between;margin:12px 0;padding:16px;background:linear-gradient(90deg,#effaf5,#fff4df);border-radius:18px}
+.airport b{font-size:31px;color:#10243f}.airport span{display:block;color:#667085;font-size:13px;font-weight:800}.arrow{font-size:31px;color:#d9a441;font-weight:900}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.pill{border-radius:999px;padding:8px 12px;background:#effaf5;color:#0f5f4a;border:1px solid #caeadf;font-size:13px;font-weight:900}
+.transport{background:linear-gradient(135deg,#0f5f4aea,#1f7ed6e0),url('https://images.unsplash.com/photo-1581985673473-0784a7a44e39?auto=format&fit=crop&w=1400&q=85');background-size:cover;background-position:center;color:white;border-radius:30px;padding:26px}
+.transport h3{font-size:26px;margin:0 0 10px}.transport li{margin:9px 0;font-weight:700}
+.note{margin-top:18px;padding:17px 19px;background:#fff1cf;border-left:6px solid #d9a441;border-radius:18px;color:#66480d;font-weight:750}
+.day{display:grid;grid-template-columns:115px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid #eadfc9}
+.daynum{text-align:center;color:white;border-radius:22px;padding:16px 10px;height:max-content;background:linear-gradient(135deg,#0f5f4a,#1f7ed6)}
+.daynum b{display:block;font-size:34px}.daynum span{font-size:12px;text-transform:uppercase;color:#e7fff5;font-weight:900}
+.daybody h3{font-size:25px;color:#10243f;margin:0 0 7px}.daybody p{color:#5e6978;margin:0;line-height:1.48}
+.money{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.moneybox{color:white;border-radius:24px;padding:19px;min-height:124px;background:linear-gradient(135deg,#0f5f4a,#1fa67a)}
+.moneybox:nth-child(2){background:linear-gradient(135deg,#1f7ed6,#44b7e8)}.moneybox:nth-child(3){background:linear-gradient(135deg,#d9a441,#c17c1f)}.moneybox:nth-child(4){background:linear-gradient(135deg,#10243f,#33415c)}
+.moneybox span{display:block;font-size:12px;font-weight:900;text-transform:uppercase;opacity:.92}.moneybox b{display:block;font-size:34px;margin-top:7px}
+.status{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.status div{background:white;border:1px solid #e8dcc6;border-radius:17px;padding:15px;font-weight:850}
+.footer{background:linear-gradient(135deg,#10243fee,#0f5f4add),url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center;color:white;text-align:center;padding:36px 44px}
+.footer h2{color:white;font-size:40px}.footer p{color:#ffe7af;font-weight:800}
+@media print{body{background:white}.page{margin:0;box-shadow:none;page-break-after:always}}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="cover">
+    <div>
+      <img class="logo" src="https://ryutec.net/ryutectravel.png">
+      <br><div class="tag">Familia · Aventura · Medellín</div>
+      <h1>Medellín<br>2026</h1>
+      <p class="sub">08 al 11 de agosto · Panamá → Colombia</p>
+      <div class="stats">
+        <div class="stat"><span>Viajeros</span><b>16</b></div>
+        <div class="stat"><span>Adultos</span><b>12</b></div>
+        <div class="stat"><span>Niños</span><b>3</b></div>
+        <div class="stat"><span>Infante</span><b>1</b></div>
+      </div>
+    </div>
+    <div class="signature">Ryutec Travel ha llegado. No solo vamos de viaje: vamos a crear historias.</div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="band">✈️ Prepárense para el despegue · Medellín nos espera 🇨🇴</div>
+  <div class="section">
+    <div class="head"><div class="icon">✈️</div><div><h2>Vuelos confirmados</h2><p class="lead">Horarios ideales para aprovechar el primer día y regresar sin carreras.</p></div></div>
+    <div class="grid2">
+      <div class="card"><h3>Ida · Sábado 08 de agosto</h3><div class="flight"><div class="airport"><b>BLB</b><span>08:15 AM</span></div><div class="arrow">→</div><div class="airport"><b>MDE</b><span>09:32 AM</span></div></div><p>Panamá Pacífico hacia Medellín.</p></div>
+      <div class="card"><h3>Regreso · Martes 11 de agosto</h3><div class="flight"><div class="airport"><b>MDE</b><span>06:32 PM</span></div><div class="arrow">→</div><div class="airport"><b>BLB</b><span>07:50 PM</span></div></div><p>Medellín hacia Panamá Pacífico.</p></div>
+    </div>
+  </div>
+  <div class="section" style="background:#fbf3e6">
+    <div class="head"><div class="icon">🏠</div><div><h2>Base de operaciones</h2><p class="lead">Zona Estadio / Laureles: cerca de transporte, restaurantes, bares y actividades.</p></div></div>
+    <div class="grid2">
+      <div class="card"><h3>Alojamiento familiar</h3><p>5 habitaciones, 10 camas y 3 baños para una estadía cómoda durante 3 noches.</p><div class="pills"><span class="pill">Metro cerca</span><span class="pill">La 70</span><span class="pill">Restaurantes</span><span class="pill">Mercados</span></div></div>
+      <div class="card"><h3>Zona ideal para el grupo</h3><p>Buena para descansar, salir a caminar, cenar cerca o disfrutar la noche sin alejarse demasiado.</p><div class="pills"><span class="pill">Familia</span><span class="pill">Fotos</span><span class="pill">Compras</span><span class="pill">Vida nocturna</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section">
+    <div class="head"><div class="icon">🚐</div><div><h2>Transporte privado y tours</h2><p class="lead">Movilidad coordinada internamente para viajar cómodos y a nuestro ritmo.</p></div></div>
+    <div class="transport">
+      <h3>Movilidad exclusiva para el grupo</h3>
+      <ul>
+        <li>Traslado Aeropuerto José María Córdova → alojamiento.</li>
+        <li>Traslado alojamiento → Aeropuerto José María Córdova.</li>
+        <li><b>Tour privado a Guatapé</b> en vehículo para el grupo.</li>
+        <li><b>City Tour Medellín + Comuna 13 privado</b>, sin bus compartido.</li>
+        <li><b>Visita nocturna privada a mirador</b> la primera noche.</li>
+        <li>Horarios flexibles: sin buses compartidos ni tiempos impuestos por terceros.</li>
+      </ul>
+    </div>
+    <div class="note">La ventaja del transporte privado es simple: viajamos juntos, paramos cuando sea necesario y manejamos el tiempo del grupo sin depender de desconocidos.</div>
+  </div>
+
+  <div class="section" style="padding-top:8px">
+    <div class="head"><div class="icon">📅</div><div><h2>Ruta definitiva propuesta</h2><p class="lead">Balance entre aventura, ciudad, descanso, mirador nocturno y compras.</p></div></div>
+
+    <div class="day"><div class="daynum"><b>01</b><span>Sábado</span></div><div class="daybody"><h3>Llegada + Laureles + Mirador Nocturno</h3><p>Llegada a Medellín, traslado al alojamiento, instalación, almuerzo y descanso. En la noche: visita privada a mirador con tiempo para cenar, tomar algo caliente y disfrutar la vista de Medellín iluminada.</p><div class="pills"><span class="pill">Llegada</span><span class="pill">Check-in</span><span class="pill">Mirador</span><span class="pill">Cena opcional</span><span class="pill">Fotos nocturnas</span></div></div></div>
+    <div class="day"><div class="daynum"><b>02</b><span>Domingo</span></div><div class="daybody"><h3>Tour Privado a Guatapé</h3><p>Día completo para Piedra del Peñol, pueblo de Guatapé, malecón, embalse, fotos y paseo en barco.</p><div class="pills"><span class="pill">Piedra</span><span class="pill">Guatapé</span><span class="pill">Barco</span><span class="pill">Paisajes</span></div></div></div>
+    <div class="day"><div class="daynum"><b>03</b><span>Lunes</span></div><div class="daybody"><h3>City Tour Privado + Comuna 13</h3><p>Recorrido privado por Medellín: Plaza Botero, Pueblito Paisa, Metro, Metrocable, Comuna 13 y arte urbano.</p><div class="pills"><span class="pill">Comuna 13</span><span class="pill">Metro</span><span class="pill">Metrocable</span><span class="pill">Arte urbano</span></div></div></div>
+    <div class="day"><div class="daynum"><b>04</b><span>Martes</span></div><div class="daybody"><h3>Compras + Almuerzo + Aeropuerto</h3><p>Día suave, sin viajes largos. Compras, recuerdos, almuerzo tranquilo y salida al aeropuerto sin estrés.</p><div class="pills"><span class="pill">Centro comercial</span><span class="pill">Recuerdos</span><span class="pill">Almuerzo</span><span class="pill">Aeropuerto</span></div></div></div>
+  </div>
+</div>
+
+<div class="page">
+  <div class="section">
+    <div class="head"><div class="icon">💵</div><div><h2>Resumen base</h2><p class="lead">Números claros para que el grupo se organice.</p></div></div>
+    <div class="money">
+      <div class="moneybox"><span>Vuelo + hospedaje</span><b>$225</b><small>por adulto / niño</small></div>
+      <div class="moneybox"><span>Transporte + tours</span><b>$70</b><small>estimado por persona</small></div>
+      <div class="moneybox"><span>Estadía</span><b>3</b><small>noches</small></div>
+      <div class="moneybox"><span>Viaje</span><b>4</b><small>días</small></div>
+    </div>
+    <div class="note">El valor base incluye vuelos ida y vuelta + hospedaje. El estimado de transporte y tours cubre traslados principales, Guatapé privado, City Tour privado y mirador nocturno. No incluye comidas, compras, entradas opcionales ni gastos personales.</div>
+  </div>
+  <div class="section" style="background:#f1f8ef">
+    <div class="head"><div class="icon">✅</div><div><h2>Estado del viaje</h2><p class="lead">Lo principal ya está encaminado. Ahora viene la parte divertida.</p></div></div>
+    <div class="status">
+      <div>✅ Vuelos confirmados</div><div>✅ Grupo definido</div><div>✅ Hospedaje definido</div>
+      <div>⏳ Transporte privado</div><div>⏳ Guatapé privado</div><div>⏳ City Tour privado</div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="head"><div class="icon">🎒</div><div><h2>Checklist viajero</h2><p class="lead">Para que nadie llegue corriendo el último día.</p></div></div>
+    <div class="grid2">
+      <div class="card"><h3>Documentos y básicos</h3><p>Documento vigente, cargador, batería portátil, medicamentos personales y capturas de información importante.</p></div>
+      <div class="card"><h3>Para caminar y disfrutar</h3><p>Tenis cómodos, ropa fresca, chaqueta ligera, protector solar y buena actitud para las fotos.</p></div>
+    </div>
+  </div>
+  <div class="footer"><h2>Ryutec Travel ha llegado ✈️</h2><p>Medellín 2026 · Familia, aventura y recuerdos</p><p>No contamos los días. Creamos recuerdos.</p></div>
+</div>
+</body>
+</html>
